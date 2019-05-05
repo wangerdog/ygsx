@@ -1,0 +1,316 @@
+@charset "utf-8";
+@import "header";
+@import "leftnav";
+@import "footer";
+//楼层边框样式
+$floorborderstyle:1px solid #d5d5d5;
+// 轮播图
+#banner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: -38px;
+    .b-slider {
+        position: relative;
+        height: 500px;
+        width: 100% !important;
+        margin: 0 auto;
+        @for $i from 1 through 3 {
+            .banner#{$i} {
+                background: url(../img/banner#{$i}.jpg);
+            }
+        }
+        li:nth-of-type(1) {
+            display: block;
+        }
+        li {
+            background: rgb(239, 239, 239);
+            position: absolute;
+            width: 1263px;
+            left: 0px;
+            top: 0px;
+            display: none;
+            overflow: hidden;
+            width: 100% !important;
+            height: 500px;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .slider-wrap {
+        z-index: 1;
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .banner-main {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        transform: scaleX(1.2);
+    }
+    .b-btn {
+        z-index: 20;
+        display: none;
+        a {
+            opacity: 0.3;
+            width: 40px;
+            height: 100px;
+            background: url(../img/slider-btn.png) no-repeat;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+        }
+        .prev {
+            left: 0;
+            background-position: top left;
+        }
+        .next {
+            right: 0;
+            background-position: top right;
+        }
+    }
+    .b-dot {
+        position: absolute;
+        bottom: 12px;
+        left: 43%;
+        height: 12px;
+        z-index: 3;
+        li {
+            overflow: hidden;
+            float: left;
+            width: 12px;
+            height: 12px;
+            line-height: 10px;
+            color: #b5b2a8;
+            background: #b5b2a8;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-indent: 100000000px;
+        }
+    }
+    .b-dot li.on {
+        color: #5aaa16;
+        background: #5aaa16;
+    }
+}
+
+// 商品分类
+#classify {
+    ul {
+        margin-left: -12px;
+    }
+    li {
+        position: relative;
+        overflow: hidden;
+        float: left;
+        display: inline;
+        width: 290px;
+        height: 290px;
+        margin: 0 0 10px 13px;
+        &:hover {
+            box-shadow: 0px 0px 7px #444;
+        }
+    }
+    p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 270px;
+        height: 57px;
+        margin: 10px;
+        color: #575757;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    b {
+        display: block;
+        font: bold 22px "Microsoft YaHei";
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+// 商品楼层
+.floor {
+    clear: both;
+    position: relative;
+    padding-top: 18px;
+    .floor-title {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 5px;
+        h2 {
+            float: left;
+            height: 32px;
+            font: bold 18px "Microsoft YaHei";
+            a {
+                color: #fc5f3c;
+            }
+        }
+        i {
+            display: inline-block;
+            width: 31px;
+            height: 18px;
+            margin-right: 10px;
+            padding: 10px 7px 4px 7px;
+            color: #fff;
+            font: bold 14px "Microsoft YaHei";
+            vertical-align: text-bottom;
+            background: url(../img/floor_tit_icon.png) no-repeat left top;
+        }
+        .keyword {
+            a {
+                color: #4e4e4e;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:after {
+                content: '|';
+                padding: 0 7px;
+            }
+            a:nth-of-type(3)::after {
+                content: '';
+                padding: 0;
+            }
+        }
+    }
+    .floor-con {
+        .floor-side {
+            float: left;
+            width: 275px;
+            height: 462px;
+            a {
+                display: block;
+            }
+        }
+        .floor-main {
+            position: relative;
+            float: left;
+            background: #fff;
+            a img {
+                transition: all 0.35s;
+            }
+            a:hover img {
+                transform: translate(5px, 0);
+            }
+        }
+    }
+    .floor-layout2 {
+        li {
+            float: left;
+            overflow: hidden;
+            width: 230px;
+            height: 230px;
+            border-right: $floorborderstyle;
+            border-bottom: $floorborderstyle;
+        }
+        .floor-main {
+            width: 924px;
+            height: 462px;
+            border-top: $floorborderstyle;
+            border-left: $floorborderstyle;
+        }
+        .wide {
+            width: 461px;
+        }
+    }
+    .floor-layout3 {
+        .floor-main {
+            width: 923px;
+            height: 461px;
+            border: $floorborderstyle;
+        }
+        .col1 {
+            width: 234px;
+            height: 383px;
+            border-right: $floorborderstyle;
+            border-bottom: $floorborderstyle;
+            float: left;
+            overflow: hidden;
+        }
+        .col2 {
+            width: 442px;
+            float: left;
+            overflow: hidden;
+            .narrow {
+                width: 220px;
+            }
+            li {
+                float: left;
+                overflow: hidden;
+                height: 191px;
+                border-right: $floorborderstyle;
+                border-bottom: $floorborderstyle;
+                background: #fff;
+            }
+        }
+        .col3 {
+            width: 246px;
+            height: 461px;
+            float: left;
+            overflow: hidden;
+        }
+        .logo-list {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 654px;
+            height: 55px;
+            padding: 11px;
+            border-right: $floorborderstyle;
+            background: #fff;
+            a {
+                float: left;
+                margin: 0 14px;
+            }
+        }
+    }
+}
+
+//回到顶部和客服聊天
+.right-guide {
+    display: block;
+    z-index: 100;
+    position: fixed;
+    right: 7px;
+    margin-right: 0;
+    top: 80%;
+    .s-btn {
+        display: block;
+        width: 50px;
+        height: 42px;
+        margin-bottom: 10px;
+        background: url(../img/sidebar.png) no-repeat left top;
+    }
+    .service {
+        background-position: 0 -46px;
+        &:hover {
+            background-position: -56px -46px;
+        }
+    }
+    .gotop {
+        display: block;
+        background-position: 0 0;
+        &:hover {
+            background-position: -56px 0;
+        }
+    }
+}

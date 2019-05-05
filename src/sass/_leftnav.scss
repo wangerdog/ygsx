@@ -1,0 +1,118 @@
+@charset "utf-8";
+$fontcolor:#008842;
+.leftnav {
+    position: relative;
+    .leftnav-title {
+        width: 180px;
+        height: 38px;
+        position: relative;
+        text-align: center;
+        background: $fontcolor;
+        z-index: 44;
+        a {
+            overflow: hidden;
+            font: bold 15px/16px "Microsoft YaHei";
+            color: #fff;
+            display: block;
+            height: 16px;
+            padding: 11px 0;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .leftnav-list {
+        // display: none;
+        position: absolute;
+        height: 510px;
+        z-index: 70;
+    }
+    h3 {
+        a {
+            overflow: hidden;
+            position: relative;
+            display: block;
+            width: 164px;
+            height: 23px;
+            padding: 9px 0 9px 15px;
+            font: normal 14px/24px "Microsoft YaHei";
+            transition: all .3s ease-in;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 0px;
+            box-sizing: content-box;
+            background: rgba(255, 255, 255, 0.9)
+        }
+        i {
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            background: url(../img/nav-icon.png) no-repeat 0px 0px;
+        }
+        s {
+            display: none;
+            position: absolute;
+            top: 7px;
+            right: 18px;
+            font-family: Arial;
+            text-decoration: none;
+        }
+    }
+    .item:hover h3 a {
+        z-index: 50;
+        padding: 9px 0 9px 15px;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid #bbb;
+        border-right: 0px;
+        height: 23px;
+    }
+    .item:hover h3 i {
+        margin-left: 7px;
+        transition: all .2s ease-in;
+    }
+    .item:hover h3 s {
+        display: block;
+    }
+    .sub-item {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        top: -38px;
+        left: 180px;
+        width: 215px;
+        height: 520px;
+        padding: 17px 20px;
+        border: 1px solid #bbb;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    h4 {
+        margin-bottom: 10px;
+        font: normal 18px "Microsoft YaHei";
+        text-decoration: underline;
+        a {
+            color: #20985a;
+        }
+    }
+    .sub-list a {
+        display: inline-block;
+        line-height: 25px;
+        margin-right: 30px;
+        color: #686868;
+        &:hover {
+            color: $fontcolor;
+        }
+    }
+    .catalogs-ad {
+        position: absolute;
+        bottom: 10px;
+        a {
+            display: block;
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    .leftnav-list#{$i} a i {
+        background-position: ($i - 1)*-24px 0;
+    }
+}

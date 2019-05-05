@@ -1,0 +1,140 @@
+@charset 'utf-8';
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+textarea {
+    font-size: 12px;
+    font-family: Arial, Verdana, "\5b8b\4f53";
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+input {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 12px;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+    list-style-type: none;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #008842;
+}
+
+i,
+s {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clearfix:after,
+.wrap:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background: #f7f8f8;
+}
+
+.bgcolor {
+    background: #f7f8f8;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
