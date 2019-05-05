@@ -1,0 +1,264 @@
+@charset "utf-8";
+.header {
+    border: none;
+    background: #e0e0e0;
+    .wrap {
+        padding: 15px 0 5px 0;
+    }
+    .logo a {
+        display: block;
+        width: 195px;
+        height: 50px;
+        background: url(../img/logo.png) no-repeat;
+    }
+    .header-title {
+        font: 28px/1 Microsoft YaHei;
+        position: absolute;
+        top: 16px;
+        white-space: nowrap;
+        color: #008842;
+        left: 260px;
+    }
+}
+
+.register {
+    margin-top: 30px;
+    .wrap {
+        padding: 40px 0 50px;
+        border: 1px solid #a5c9b6;
+        border-top: 0;
+        background-color: #fff;
+    }
+    p {
+        margin-bottom: 29px;
+        font: 14px Arial, "Microsoft YaHei";
+    }
+    .span-name {
+        display: inline-block;
+        width: 220px;
+        padding-right: 20px;
+        text-align: right;
+    }
+    .input {
+        margin-right: 20px;
+        border: 1px solid #c1c1c1;
+        background-color: #fff;
+        height: 38px;
+        vertical-align: middle;
+        padding-left: 14px;
+        width: 290px;
+        font: 14px/38px "Microsoft YaHei";
+    }
+    .btn-yzm {
+        display: inline-block;
+        width: 121px;
+        height: 38px;
+        text-align: center;
+        line-height: 38px;
+        background-color: #f7f7f7;
+        border: 1px solid #c1c1c1;
+        color: #008842;
+        margin-right: 20px;
+    }
+    .input-yzm {
+        width: 147px;
+    }
+    .green {
+        color: #008842;
+    }
+    .fr {
+        width: 330px;
+        height: 340px;
+        padding-top: 50px;
+        font: 14px/56px "Microsoft YaHei";
+        text-align: center;
+        background: url(../img/register_line.jpg) 0 0 repeat-y;
+        position: relative;
+    }
+    .right {
+        position: absolute;
+        top: -15px;
+        left: 130px;
+        font: 14px/1 "Microsoft YaHei";
+        text-align: right;
+        .orange {
+            margin-right: 36px;
+            text-decoration: underline;
+            color: #ef760a;
+        }
+    }
+}
+
+input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    vertical-align: -1px;
+}
+
+.input-phone {
+    background-position: 276px -30px;
+    background-image: url(../img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.input-password {
+    background-position: 276px -70px;
+    background-image: url(../img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.btn-green {
+    background: #008842;
+    width: 306px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font: 18px/50px "Microsoft YaHei";
+    &:hover {
+        color: #fff;
+    }
+}
+
+//登录
+.login {
+    background-color: #fff;
+    border: 1px solid #65b42c;
+    margin-top: 20px;
+    padding-top: 30px;
+    .input {
+        border: 1px solid #c1c1c1;
+        background-color: #fff;
+        height: 38px;
+        vertical-align: middle;
+        padding-left: 14px;
+        width: 290px;
+        font: 14px/38px "Microsoft YaHei";
+        padding-left: 50px;
+        width: 254px;
+        background-image: url(../img/bg_input.png);
+        background-repeat: no-repeat;
+    }
+    .fr {
+        padding-right: 105px;
+    }
+    p {
+        margin-bottom: 20px;
+        font: 12px Arial, "SimSun";
+        color: #878787;
+        position: relative;
+        overflow: hidden;
+        strong {
+            color: #262626;
+            font: 18px/1 "Microsoft YaHei";
+        }
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .green {
+            text-decoration: underline;
+        }
+    }
+}
+
+.input-phone-icon,
+.input-key-icon {
+    position: absolute;
+    left: 1px;
+    top: 1px !important;
+    width: 40px;
+    height: 38px;
+    background-image: url(../img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.input-phone-icon {
+    background-position: 0 -120px;
+}
+
+.input-key-icon {
+    background-position: 0 -180px;
+}
+
+#VerifyCode {
+    width: 100px;
+    float: left;
+}
+
+.gray {
+    display: inline-block;
+    color: #878787;
+}
+
+.login-main {
+    width: 308px;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #e3e6e0;
+    p {
+        width: 100%;
+    }
+}
+
+.pass-error {
+    color: #f60000;
+}
+
+.login i,
+.register i {
+    background-image: url(../img/bg_login.png);
+    width: 88px;
+    height: 20px;
+    padding-right: 15px;
+}
+
+.qq i {
+    background-position: -60px -200px;
+}
+
+.sina i {
+    background-position: -160px -200px;
+}
+
+.ay i {
+    background-position: -260px -200px;
+    width: 57px;
+    margin-right: 0;
+}
+
+.pass-error i {
+    background-position: -40px -200px;
+}
+
+.pass-succ i,
+.pass-tip i,
+.pass-error i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+.pass-succ i {
+    background-position: 0 -200px;
+}
+
+.msg-wrap {
+    height: auto !important;
+    margin: 2px 0px 5px;
+    min-height: 31px;
+}
+
+.msg-error {
+    position: relative;
+    background: #FFEBEB none repeat scroll 0% 0%;
+    border: 1px solid #E4393C;
+    padding: 3px 10px 3px 40px;
+    line-height: 18px;
+    min-height: 18px;
+    color: #E4393C;
+}

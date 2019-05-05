@@ -1,0 +1,332 @@
+@charset "utf-8";
+@import "leftnav";
+//详情页的导航
+.nav-items {
+    overflow: hidden;
+    float: left;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+    ul li {
+        float: left;
+        width: 115px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.crumbs {
+    margin: 10px 0;
+    margin-left: -10px;
+    a {
+        margin: 0 10px;
+    }
+}
+
+//商品详情页
+#details {
+    .details-nav {
+        margin: 10px 0;
+        margin-left: -10px;
+        a {
+            margin: 0 10px;
+        }
+    }
+    .details-content {
+        margin-bottom: 20px;
+    }
+    .product-left {
+        position: relative;
+        float: left;
+        width: 500px;
+        height: 600px;
+        .pic-big {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+        .pic-small {
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+            .picList {
+                padding-top: 10px;
+                width: 500px;
+                ul {
+                    zoom: 1;
+                    margin-left: -16px;
+                }
+                li {
+                    float: left;
+                    overflow: hidden;
+                    height: 85px;
+                    width: 85px;
+                    border: 1px solid #bcbcbc;
+                    margin-left: 16px;
+                    cursor: pointer;
+                }
+                img {
+                    width: 85px;
+                    height: 85px;
+                }
+                .on {
+                    border-color: #008842;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .product-right {
+        width: 680px;
+        margin-left: 520px;
+        .product-name {
+            margin: 0 85px 20px 0;
+            h1 {
+                font: normal 26px "Microsoft YaHei";
+            }
+            p {
+                height: 40px;
+                margin-top: 5px;
+                color: #777;
+                font: normal 16px/20px "Microsoft YaHei";
+            }
+        }
+        .product-price {
+            height: 70px;
+            padding: 10px 20px;
+            background: #fff;
+            position: relative;
+            .pro-price {
+                float: left;
+                height: 70px;
+                width: 423px;
+                span {
+                    display: inline-block;
+                }
+                em {
+                    padding: 0 5px;
+                    font-size: 18px;
+                    color: #ff0000;
+                    font-style: normal;
+                }
+                strong {
+                    color: #ff0000;
+                    font-size: 22px;
+                    font-weight: normal;
+                }
+                .tt {
+                    width: 60px;
+                }
+                .pro-m2 {
+                    color: #999999;
+                    border-top: 1px solid #e2e2e2;
+                    margin-top: 10px;
+                    padding-top: 10px;
+                }
+            }
+            .pro-tel {
+                position: absolute;
+                right: 160px;
+                top: 5px;
+                p {
+                    float: left;
+                    margin-top: 53px;
+                    margin-right: 10px;
+                }
+                i {
+                    display: inline-block;
+                    width: 8px;
+                    height: 14px;
+                    background: url(../img/icon-tel.png) no-repeat center;
+                    margin-right: 5px;
+                    vertical-align: top;
+                }
+                strong {
+                    font-weight: normal;
+                    color: #11b57c;
+                    margin-left: 10px;
+                }
+                .code {
+                    float: left;
+                    width: 73px;
+                    height: 73px;
+                    padding: 3px 4px 4px 10px;
+                    background: url(../img/bg-code.png) no-repeat;
+                    img {
+                        width: 73px;
+                        height: 73px;
+                    }
+                }
+            }
+            .pro-review {
+                float: right;
+                text-align: center;
+                p {
+                    line-height: 22px;
+                    color: #999;
+                }
+                b {
+                    color: #e8380d;
+                    font-size: 18px;
+                    font-weight: normal;
+                    vertical-align: middle;
+                }
+                a {
+                    color: #999;
+                }
+            }
+        }
+    }
+    .product-other {
+        margin-top: 20px;
+        .left {
+            float: left;
+            width: 529px;
+            padding-right: 20px;
+            border-right: 1px solid #d9d9d9;
+            .choose {
+                margin-bottom: 20px;
+            }
+            .dt {
+                line-height: 52px;
+                float: left;
+                width: 40px;
+                padding: 0 10px;
+            }
+            li {
+                float: left;
+                position: relative;
+                margin: 5px 10px 5px 0;
+                a {
+                    float: left;
+                    width: auto;
+                    background-color: #fff;
+                    white-space: nowrap;
+                    text-align: center;
+                    border: 1px solid #e2e2e2;
+                    border-bottom: none;
+                    text-decoration: none;
+                    border-color: #008842;
+                    span {
+                        display: block;
+                        padding: 5px 12px 5px 9px;
+                        border-bottom: 1px solid #e2e2e2;
+                        border-color: #008842;
+                    }
+                }
+                i {
+                    z-index: 11;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 16px;
+                    height: 16px;
+                    overflow: hidden;
+                    text-indent: -99em;
+                    background: url(../img/product.png) no-repeat 0 0;
+                }
+            }
+            .dd {
+                float: left;
+                width: 468px;
+            }
+            .pro-service {
+                padding-left: 10px;
+                color: #999;
+                margin-bottom: 20px;
+                b {
+                    color: #008842;
+                }
+                .mr5 {
+                    margin-right: 5px;
+                }
+            }
+            .pro-amount {
+                margin-bottom: 20px;
+                .dt {
+                    line-height: 43px;
+                    float: left;
+                    width: 40px;
+                    padding: 0 10px;
+                }
+                .dd {
+                    float: left;
+                    width: 468px;
+                }
+                .spinner {
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+                    width: 76px;
+                    .decrease {
+                        top: 21px;
+                        right: 18px;
+                        border-top: none;
+                    }
+                    button {
+                        display: block;
+                        width: 18px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        float: right;
+                        position: relative;
+                        border: 1px solid #e2e2e2;
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                    input {
+                        width: 39px;
+                        height: 39px;
+                        line-height: 41px;
+                        font-size: 16px;
+                        text-align: center;
+                        border: 1px solid #e2e2e2;
+                        border-right: none;
+                    }
+                }
+                .addcart {
+                    float: left;
+                    width: 187px;
+                    height: 43px;
+                    margin-left: 10px;
+                    a {
+                        display: block;
+                        width: 187px;
+                        height: 25px;
+                        padding: 9px 0;
+                        text-align: center;
+                        font: normal 18px/25px "Microsoft YaHei";
+                        color: #fff;
+                        background: #008842;
+                        border-radius: 3px;
+                        i {
+                            width: 28px;
+                            height: 25px;
+                            margin-right: 10px;
+                            vertical-align: bottom;
+                            background: url(../img/product.png) no-repeat -47px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            float: right;
+            width: 120px;
+            padding-left: 10px;
+            color: #777;
+            th {
+                padding: 5px 0;
+                width: 65px;
+                font-weight: normal;
+                text-align: left;
+            }
+            td {
+                padding-left: 5px;
+            }
+        }
+    }
+}

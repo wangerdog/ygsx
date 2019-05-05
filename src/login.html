@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="../html/index.html" target="_blank"></a>
+                <span class="header-title">登录</span>
+            </div>
+        </div>
+    </div>
+
+    <form action="#" method="post">
+        <div class="login">
+            <div class="wrap">
+                <div class="fl">
+                </div>
+                <div class="fr">
+                    <div class="login-main">
+                        <p>
+                            <strong>欢迎登录</strong>
+                            <span>还没有账号？
+                                <a class="green" href="./register.html">立即注册</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="input-phone-icon">&nbsp;</span>
+                            <input class="input input-phone" id="login-phone" name="login-phone" placeholder="已验证手机" type="text" value="">
+                        </p>
+                        <p>
+                            <span class="input-key-icon">&nbsp;</span>
+                            <input class="input input-key" id="login-password" name="login-password" placeholder="密码" type="password">
+                        </p>
+                        <p>
+                            <span class="input-key-icon fl">&nbsp;</span>
+                            <input class="input input-key" id="VerifyCode" name="VerifyCode" placeholder="验证码" type="text" value="">
+                            <img src="./img/verifycode.jpg" id="imgcode">
+                            <a href="#" class="gray">换一张</a>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="UserNameRemeber" type="checkbox">
+                              自动登录
+                            </label>
+                            <span>
+                                 <a class="gray" href="#">忘记登录密码？</a> 
+                            </span>
+                        </p>
+                        <p><a id="btnLogin" href="#" class="btn-green">登 &nbsp; 录</a></p>
+                        <p>第三方登录</p>
+                        <div id="p-code-btn">
+                            <a href="#" class="qq"><i></i></a>
+                            <a href="#" class="sina"><i></i></a>
+                            <a href="#" class="ay"><i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
