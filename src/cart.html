@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div id="cart_header"></div>
+    <div class="header">
+        <div class="wrap clear">
+            <div class="logo fl">
+                <a href="./index.html" target="_blank"></a>
+            </div>
+            <div class="header-bot fr">
+                <ul>
+                    <li class="on"><b class="b1"></b><span>我的购物车</span></li>
+                    <li><i></i><b class="b2"></b><span>填写订单信息</span></li>
+                    <li><i></i><b class="b3"></b><span>成功提交订单</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车详情 -->
+    <div id="cart">
+        <div class="wrap">
+            <div class="cart-none none">
+                <p>
+                    <b>购物车是空的，去买点东西吧！<a href="./index.html">继续逛逛&gt;&gt;</a></b>
+                </p>
+            </div>
+            <!-- 当购物车有物品 -->
+            <div class="cart-show">
+                <!-- 导航标题 -->
+                <h2>
+                    我的购物车
+                    <div class="city clear">
+                        <div class="city-sz"><i></i>配送至：</div>
+                        <div class="city-tit">
+                            <a class="city-name" href="#">杭州<s></s></a>
+                        </div>
+                    </div>
+                    <a class="go-shopping" href="./index.html">继续购物 &gt; &gt;</a>
+                </h2>
+                <!-- 购物车详情 -->
+                <div class="cart-main">
+                    <div class="cart-main-header">
+                        <table class="cart-table">
+                            <tbody>
+                                <tr>
+                                    <th class="cart-t-check">
+                                        <label>
+                                            <input type="checkbox" checked="checked" class="checkAll">全选
+                                        </label>
+                                    </th>
+                                    <th class="cart-t-info">商品信息</th>
+                                    <th class="cart-t-ub">悠币</th>
+                                    <th class="cart-t-price">单价</th>
+                                    <th class="cart-t-num">购买数量</th>
+                                    <th class="cart-t-total">合计</th>
+                                    <th class="cart-t-spec">规格</th>
+                                    <th class="cart-t-opera">操作</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-main-list">
+                        <table class="cart-table">
+                            <tbody class="car-cont">
+                                <tr>
+                                    <td class="cart-t-check"><input type="checkbox" checked="checked"></td>
+                                    <td class="cart-t-img">
+                                        <a href="#">
+                                            <img src="http://img13.yiguoimg.com/d/items/2017/170905/9288712357782309_300.jpg">
+                                        </a>
+                                    </td>
+                                    <td class="cart-t-info">
+                                        <a href="http://www.yiguo.com/product/1310853.html">味千拉面麻辣骨汤拉面(2人份)320g
+                                        </a>
+                                    </td>
+                                    <td class="cart-t-ub"></td>
+                                    <td class="cart-t-price">￥13.80</td>
+                                    <td class="cart-t-num">
+                                        <div class="quantity-form">
+                                            <a href="#" class="decrement"></a>
+                                            <input id="" type="text" class="itxt" oldnum="1" value="1" onblur="">
+                                            <a href="" class="increment"></a>
+                                        </div>
+                                    </td>
+                                    <td class="cart-t-total">￥<span>13.80</span></td>
+                                    <td class="cart-t-spec">320g/袋</td>
+                                    <td class="cart-t-opera">
+                                        <a href="#">移入收藏</a>
+                                        <br>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-main-bot">
+                        <div class="wrap clear">
+                            <div class="fl">
+                                <label><input type="checkbox" checked="checked" class="chkAll">全选</label>
+                                <a href="#"><i></i>删除选中的商品</a>
+                                <a href="#">清空购物车</a>
+                            </div>
+                            <div class="fr">
+                                <span class="ub">悠币：<em>0</em>个</span>
+                                <span class="fs14">总价：<em>￥<span id="zj">13.80</span></em>
+                                </span>
+
+                                <a href="#" class="btn" id="btnSubmit" name="btnSubmit">去结算</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -97,17 +97,12 @@ s {
     vertical-align: middle;
 }
 
-.clearfix:after,
-.wrap:after {
+.clear::after {
+    clear: both;
     content: " ";
     display: block;
     height: 0;
-    clear: both;
     visibility: hidden;
-}
-
-.clear {
-    clear: both;
 }
 
 .fl {

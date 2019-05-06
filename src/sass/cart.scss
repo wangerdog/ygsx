@@ -1,0 +1,316 @@
+@charset "utf-8";
+//头部底部位置
+.header-bot {
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+    li {
+        position: relative;
+        float: left;
+        b {
+            background: url(../img/order-step.png) no-repeat;
+            width: 36px;
+            height: 36px;
+            display: block;
+            float: left;
+        }
+        span {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            display: inline-block;
+            width: 160px;
+            text-align: center;
+            right: -62px;
+            color: #333;
+        }
+        i {
+            width: 165px;
+            height: 6px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-width: 1px 0;
+            display: block;
+            float: left;
+            margin-top: 15px;
+            margin-right: 0;
+            overflow: hidden;
+        }
+        .b2 {
+            background-position: -42px 0;
+        }
+        .b3 {
+            background-position: -84px 0;
+        }
+    }
+    .on {
+        .b1 {
+            background-position: 0 -44px;
+        }
+        span {
+            color: #008842;
+        }
+    }
+}
+
+#cart {
+    margin-top: 20px;
+}
+
+//当购物车为空的时候
+.cart-none {
+    border: 1px solid #e3e6e0;
+    background: #fff;
+    line-height: 30px;
+    padding: 70px 0;
+    a {
+        color: #008842;
+    }
+    p {
+        height: 280px;
+        font-size: 14px;
+        text-align: center;
+        background: url(../img/none-bg.jpg) no-repeat center bottom;
+        b {
+            font-size: 14px;
+            font-weight: normal;
+            a {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+//购物车内容的导航
+.cart-show {
+    //h2标题送达地址等
+    h2 {
+        font-weight: normal;
+        height: 38px;
+        line-height: 38px;
+        border-bottom: 2px solid #05984d;
+        text-indent: -9999em;
+        position: relative;
+        background: url(../img/bg_cart.png) no-repeat 0 0 #fff;
+        text-indent: -9999em;
+        .city {
+            position: absolute;
+            left: 230px;
+            top: 4px;
+            text-indent: 0;
+        }
+        .city-sz {
+            float: left;
+            height: 16px;
+            line-height: 16px;
+            margin: 7px 0;
+            cursor: pointer;
+        }
+        i {
+            display: inline-block;
+            background-position: -80px -40px;
+            width: 12px;
+            height: 16px;
+            margin-right: 8px;
+        }
+        .city-tit {
+            float: left;
+        }
+        .city-name {
+            z-index: 100;
+            position: relative;
+            display: block;
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 5px;
+            padding: 0 5px 5px 5px;
+            cursor: pointer;
+            s {
+                top: 9px;
+            }
+        }
+        .go-shopping {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #008842;
+            text-indent: 0;
+            text-decoration: underline;
+            margin-right: 22px;
+        }
+    }
+}
+
+// 购物车详情头部
+.cart-main {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+//购物车表格里面通用的格式
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    th {
+        height: 40px;
+        background-color: #f1f1f1;
+        font: 12px/40px Simsun;
+        color: #262626;
+        text-align: center;
+        padding: 0 10px;
+    }
+    td {
+        border-top: 1px solid #ebebeb;
+        padding: 10px;
+        text-align: center;
+    }
+    .cart-t-check {
+        width: 120px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .cart-t-ub {
+        width: 75px;
+    }
+    .cart-t-price {
+        width: 100px;
+    }
+    .cart-t-num {
+        width: 110px;
+    }
+    .cart-t-img {
+        width: 80px;
+        position: relative;
+        img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ebebeb;
+            position: relative;
+        }
+    }
+    .cart-t-total {
+        width: 110px;
+    }
+    .cart-t-spec {
+        width: 110px;
+    }
+    .cart-t-opera {
+        width: 110px;
+        a {
+            display: block;
+            margin: 5px;
+        }
+    }
+}
+
+//购物车主要内容的中部
+.cart-main-list {
+    .cart-table {
+        .cart-t-check {
+            width: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+    }
+    .cart-t-info {
+        text-align: left;
+        width: 260px;
+        a {
+            font: 14px/2.4em Simsun;
+        }
+    }
+    .quantity-form {
+        position: relative;
+        overflow: hidden;
+        width: 90px;
+        height: 30px;
+    }
+    //按钮，数量的增加减少
+    .itxt {
+        position: absolute;
+        left: 22px;
+        top: 0;
+        border: 1px solid #cacbcb;
+        width: 42px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 1px;
+        margin: 0;
+        font-size: 12px;
+        font-family: verdana;
+        color: #333;
+    }
+    .decrement {
+        float: left;
+        margin: 0;
+        width: 18px;
+        height: 24px;
+        background: url(../img/bg_cart.png) no-repeat 0 -40px;
+    }
+    .increment {
+        margin: 0;
+        width: 18px;
+        height: 24px;
+        float: right;
+        background: url(../img/bg_cart.png) no-repeat -20px -40px;
+    }
+}
+
+//购物车底部
+.cart-main-bot {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    line-height: 1em;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+    .wrap {
+        width: 100%;
+    }
+    label {
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    input {
+        margin-right: 5px;
+    }
+    a {
+        font: 12px/40px Simsun;
+        margin-left: 20px;
+    }
+    span {
+        margin-right: 20px;
+    }
+    em {
+        color: #ff5317;
+        font-weight: bold;
+        margin: 0 5px;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 1em;
+    }
+    .ub em {
+        color: #249c61;
+        font: bold 14px/1em Simsun;
+    }
+    .fs14 {
+        font-size: 14px;
+    }
+    //购物车提交按钮
+    .btn {
+        font: bold 18px/1em "微软雅黑";
+        background-color: #ff5317;
+        color: #fff;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-left: 0;
+        cursor: pointer;
+    }
+}
