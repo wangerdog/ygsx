@@ -81,7 +81,7 @@ $floorborderstyle:1px solid #d5d5d5;
     .b-dot {
         position: absolute;
         bottom: 12px;
-        left: 43%;
+        left: 47.5%;
         height: 12px;
         z-index: 3;
         li {
@@ -307,10 +307,85 @@ $floorborderstyle:1px solid #d5d5d5;
         }
     }
     .gotop {
-        display: block;
+        // display: none;
         background-position: 0 0;
         &:hover {
             background-position: -56px 0;
         }
     }
+}
+
+//左侧导航
+.floor-guide {
+    overflow: visible;
+    // display: none;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    width: 35px;
+    height: 359px;
+    margin-left: -640px;
+    z-index: 100;
+    width: 35px;
+    text-align: center;
+    a {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: #666;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover b {
+            visibility: hidden;
+        }
+    }
+    b {
+        display: block;
+        width: 40px;
+        height: 40px;
+        visibility: visible;
+        background: url(../img/floor_guide.png) no-repeat 0px 0px;
+    }
+    em {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        width: 24px;
+        height: 29px;
+        padding: 6px 8px;
+        line-height: 14px;
+        font-style: normal;
+        color: #fff;
+        transition: background-color .3s ease-out;
+    }
+    i {
+        display: block;
+        width: 30px;
+        margin: auto;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        border-top: 1px solid #d7d7d7;
+    }
+    @for $i from 1 through 9 {
+        .floor-guide-#{$i} {
+            background-position: ($i - 1)*-40px 0;
+        }
+    }
+}
+
+.floor-guide a:hover em,
+.floor-guide .current em {
+    visibility: visible;
+    color: #fff;
+    background-color: #008842;
+}
+
+.floor-guide .current b {
+    display: none;
 }

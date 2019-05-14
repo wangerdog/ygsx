@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>登录</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/register.css">
 </head>
 
 <body>
     <div class="header">
-        <div class="wrap">
+        <div class="wrap clear">
             <div class="logo">
                 <a href="../html/index.html" target="_blank"></a>
                 <span class="header-title">登录</span>
             </div>
         </div>
     </div>
-
     <form action="#" method="post">
         <div class="login">
-            <div class="wrap">
+            <div class="wrap clear">
                 <div class="fl">
+                    <img src="http://img05.yiguoimg.com/e/others/151217/9288691196862353.jpg" alt="">
                 </div>
                 <div class="fr">
                     <div class="login-main">
@@ -32,6 +32,10 @@
                             <span>还没有账号？
                                 <a class="green" href="./register.html">立即注册</a>
                             </span>
+                        </p>
+                        <div id="msg-wrap" class="msg-wrap">
+                            <div></div>
+                        </div>
                         </p>
                         <p>
                             <span class="input-phone-icon">&nbsp;</span>
@@ -69,6 +73,11 @@
 
         </div>
     </form>
+    <div id="login-footer"></div>
 </body>
+<script src="./script/thirdplugins/jquery.min.js"></script>
+<script src="./script/thirdplugins/jquery.cookie.js"></script>
+<script src="./script/thirdplugins/jquery.validate.js"></script>
+<script src="./script/js/login.js"></script>
 
 </html>

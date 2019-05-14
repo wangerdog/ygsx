@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>详情页</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/details.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
     <div id="details_header"></div>
     <!-- 导航 -->
-    <div class="wrap">
+    <div class="wrap clear">
         <div class="leftnav fl">
             <div class="leftnav-title">
                 <a href="#">全部商品分类▼</a>
@@ -260,25 +260,23 @@
         </div>
     </div>
     <!-- 详情页 -->
-    <div id="details" class="wrap">
+    <div id="details" class="wrap clear">
         <div class="details-nav">
             <a class="ml0" href="./index.html">首页</a> &gt;
-            <a href="#">国产水果</a>&gt; <a href="#">柑桔橙柚</a> &gt; 福建琯溪白心蜜柚2个约1kg/个
+            <a href="#">进口水果</a>&gt; <a href="#">柑桔橙柚</a> &gt; <span class="details-nav-name">福建琯溪白心蜜柚2个约1kg/个</span>
         </div>
         <div class="details-content">
             <div class="product">
                 <div class="product-left">
                     <div class="pic-big">
-                        <img class="big-img" src="http://img10.yiguoimg.com/d/items/2019/190329/9288737695704701_500.jpg">
-                        <img class="big-img none" src="../img/youzi2.jpg">
-                        <img class="big-img none" src="../img/youzi3.jpg">
+                        <img class="big-img" src="">
                     </div>
                     <div class="pic-small">
                         <div class="picList">
                             <ul>
-                                <li class="on"><img src="http://img10.yiguoimg.com/d/items/2019/190329/9288737695704701_500.jpg"></li>
-                                <li class=""><img src="http://img13.yiguoimg.com/d/items/2019/190329/9288737695671933_500.jpg"></li>
-                                <li class=""><img src="http://img10.yiguoimg.com/d/items/2019/190329/9288737695737469_500.jpg"></li>
+                                <li class="on"><img src="#"></li>
+                                <li class=""><img src="#"></li>
+                                <li class=""><img src="#"></li>
                             </ul>
                         </div>
                     </div>
@@ -319,8 +317,8 @@
                                 <ul>
                                     <li class="selected fl">
                                         <a href="#" class="fl">
-                                            <span>￥29.90</span>
-                                            <span>250g/袋</span>
+                                            <span class="selected-pic">￥29.90</span>
+                                            <span class="selected-guige">250g/袋</span>
                                             <i></i>
                                         </a>
                                     </li>
@@ -329,7 +327,7 @@
                         </div>
                         <div class="pro-service">满百包邮，
                             <b>20:00</b> 前完成订单 预计明日
-                            <b>(4月02日)</b>送达
+                            <b class="pro-time">(4月02日)</b>送达
                         </div>
                         <div class="pro-service">
                             <i class="mr5"><img src="./img/icon1.png"></i>不支持7天无理由退货
@@ -340,7 +338,7 @@
                             <div class="dd">
                                 <div class="spinner value" maxlength="2">
                                     <button class="decrease" disabled="disabled">-</button>
-                                    <input type="text" class="spinner value" id="p_number" maxlength="2">
+                                    <input type="text" class="spinner value" id="p_number" maxlength="2" value="1">
                                     <button class="increase">+</button>
                                 </div>
                                 <div class="addcart"><a class="btn-gn" href="#"><i></i>加入购物车</a></div>
@@ -374,7 +372,10 @@
         </div>
     </div>
     <!-- footer -->
-    <div id="details_footer"></div>
+    <div id="details-footer"></div>
+    <script src="./script/thirdplugins/jquery.min.js"></script>
+    <script src="./script/thirdplugins/jquery.cookie.js"></script>
+    <script src="./script/js/details.js"></script>
 </body>
 
 </html>

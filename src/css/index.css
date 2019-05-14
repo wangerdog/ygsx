@@ -256,7 +256,7 @@
       .header .search .search-keywords a.hot {
         color: #008842; }
   .header .shopping-cart {
-    z-index: 99;
+    z-index: 20;
     position: relative; }
 
 .shopping-btn {
@@ -330,7 +330,6 @@
   .shopping-list li {
     position: relative;
     overflow: hidden;
-    zoom: 1;
     background: #fff;
     height: 45px;
     padding: 0 0 15px 0;
@@ -381,7 +380,7 @@
     color: #fff;
     background: #008842; }
 
-.header_fixed {
+.header-fixed {
   z-index: 100;
   display: block;
   position: fixed;
@@ -390,30 +389,30 @@
   width: 100%;
   height: 46px;
   background: url(../img/header_fixed_bg.png) repeat; }
-  .header_fixed .wrap {
+  .header-fixed .wrap {
     height: 36px;
     padding: 5px 0; }
-  .header_fixed .logo {
+  .header-fixed .logo {
     margin-right: 0px; }
-    .header_fixed .logo a {
+    .header-fixed .logo a {
       height: 36px;
       background-size: auto 100%; }
-  .header_fixed .search {
+  .header-fixed .search {
     width: 770px;
     margin-top: 3px; }
-    .header_fixed .search .search-keywords {
+    .header-fixed .search .search-keywords {
       overflow: hidden;
       float: left;
       width: 230px;
       height: 28px;
       margin-left: 10px; }
-  .header_fixed .search-bar {
+  .header-fixed .search-bar {
     float: left; }
-  .header_fixed .shopping-cart .shopping-btn {
+  .header-fixed .shopping-cart .shopping-btn {
     width: 140px;
     padding: 2px 0;
     font-size: 20px; }
-  .header_fixed .shopping-list {
+  .header-fixed .shopping-list {
     top: 33px; }
 
 .leftnav {
@@ -711,7 +710,7 @@
   #banner .b-dot {
     position: absolute;
     bottom: 12px;
-    left: 43%;
+    left: 47.5%;
     height: 12px;
     z-index: 3; }
     #banner .b-dot li {
@@ -887,9 +886,86 @@
     .right-guide .service:hover {
       background-position: -56px -46px; }
   .right-guide .gotop {
-    display: block;
     background-position: 0 0; }
     .right-guide .gotop:hover {
       background-position: -56px 0; }
+
+.floor-guide {
+  overflow: visible;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  width: 35px;
+  height: 359px;
+  margin-left: -640px;
+  z-index: 100;
+  width: 35px;
+  text-align: center; }
+  .floor-guide a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer; }
+    .floor-guide a:hover b {
+      visibility: hidden; }
+  .floor-guide b {
+    display: block;
+    width: 40px;
+    height: 40px;
+    visibility: visible;
+    background: url(../img/floor_guide.png) no-repeat 0px 0px; }
+  .floor-guide em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    width: 24px;
+    height: 29px;
+    padding: 6px 8px;
+    line-height: 14px;
+    font-style: normal;
+    color: #fff;
+    transition: background-color .3s ease-out; }
+  .floor-guide i {
+    display: block;
+    width: 30px;
+    margin: auto;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-top: 1px solid #d7d7d7; }
+  .floor-guide .floor-guide-1 {
+    background-position: 0px 0; }
+  .floor-guide .floor-guide-2 {
+    background-position: -40px 0; }
+  .floor-guide .floor-guide-3 {
+    background-position: -80px 0; }
+  .floor-guide .floor-guide-4 {
+    background-position: -120px 0; }
+  .floor-guide .floor-guide-5 {
+    background-position: -160px 0; }
+  .floor-guide .floor-guide-6 {
+    background-position: -200px 0; }
+  .floor-guide .floor-guide-7 {
+    background-position: -240px 0; }
+  .floor-guide .floor-guide-8 {
+    background-position: -280px 0; }
+  .floor-guide .floor-guide-9 {
+    background-position: -320px 0; }
+
+.floor-guide a:hover em,
+.floor-guide .current em {
+  visibility: visible;
+  color: #fff;
+  background-color: #008842; }
+
+.floor-guide .current b {
+  display: none; }
 
 /*# sourceMappingURL=index.css.map */

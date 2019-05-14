@@ -1,3 +1,105 @@
+.footer-top {
+  background: #e0e0e0;
+  margin-top: 50px;
+  padding: 30px 0; }
+  .footer-top li {
+    float: left;
+    width: 190px;
+    height: 42px;
+    margin-left: 55px;
+    padding-left: 55px;
+    background: url(../img/footer_service_icon.png) no-repeat left top; }
+    .footer-top li b {
+      display: block;
+      padding-left: 15px;
+      color: #007f4d;
+      font: normal 18px/25px "Microsoft YaHei";
+      border-left: 1px solid #a6a6a6; }
+    .footer-top li span {
+      display: block;
+      padding-left: 15px;
+      border-left: 1px solid #a6a6a6; }
+  .footer-top .footer-top-li1 {
+    background-position: 0 0px; }
+  .footer-top .footer-top-li2 {
+    background-position: 0 -42px; }
+  .footer-top .footer-top-li3 {
+    background-position: 0 -84px; }
+  .footer-top .footer-top-li4 {
+    background-position: 0 -126px; }
+
+.footer {
+  clear: both;
+  position: relative;
+  padding-bottom: 20px;
+  border-top: 1px solid #a6a6a6; }
+  .footer .wrap {
+    margin: 50px auto 0; }
+  .footer dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+    display: inline; }
+    .footer dl dt {
+      height: 23px;
+      line-height: 23px;
+      background: url(../img/footer_icon.png) no-repeat;
+      font-size: 14px;
+      text-indent: 40px; }
+    .footer dl dd {
+      border-left: 1px dashed #A8A8A8;
+      padding-left: 20px;
+      height: 110px;
+      margin: 15px 0 0 13px; }
+      .footer dl dd a {
+        color: #575556;
+        line-height: 22px; }
+  .footer .footer-dl1 dt {
+    background-position: 0 0px; }
+  .footer .footer-dl2 dt {
+    background-position: 0 -23px; }
+  .footer .footer-dl3 dt {
+    background-position: 0 -46px; }
+  .footer .footer-dl4 dt {
+    background-position: 0 -69px; }
+  .footer .footer-dl5 dt {
+    background-position: 0 -92px; }
+  .footer .service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px; }
+    .footer .service span {
+      display: inline-block;
+      padding: 0 10px; }
+  .footer .copyright {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px; }
+    .footer .copyright a {
+      color: #717171; }
+  .footer .authentication a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    vertical-align: middle; }
+  .footer .authentication img {
+    height: 47px; }
+  .footer .foot-under {
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px; }
+    .footer .foot-under span {
+      height: 20px;
+      line-height: 20px;
+      margin: 0px 0px 0px 5px;
+      color: #939393; }
+    .footer .foot-under img {
+      height: 20px; }
+
 .header {
   border: none;
   background: #e0e0e0; }
@@ -103,8 +205,8 @@ input[type=checkbox] {
 .login {
   background-color: #fff;
   border: 1px solid #65b42c;
-  margin-top: 20px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   .login .input {
     border: 1px solid #c1c1c1;
     background-color: #fff;
@@ -188,9 +290,6 @@ input[type=checkbox] {
   width: 57px;
   margin-right: 0; }
 
-.pass-error i {
-  background-position: -40px -200px; }
-
 .pass-succ i,
 .pass-tip i,
 .pass-error i {
@@ -200,13 +299,17 @@ input[type=checkbox] {
   vertical-align: middle;
   margin-right: 9px; }
 
+.pass-error i {
+  background-position: -40px -200px;
+  width: 5px; }
+
 .pass-succ i {
-  background-position: 0 -200px; }
+  background-position: 0 -200px;
+  width: 5px; }
 
 .msg-wrap {
   height: auto !important;
-  margin: 2px 0px 5px;
-  min-height: 31px; }
+  margin: 2px 0px 5px; }
 
 .msg-error {
   position: relative;

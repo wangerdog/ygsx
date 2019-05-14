@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "footer";
 .header {
     border: none;
     background: #e0e0e0;
@@ -125,8 +126,8 @@ input[type=checkbox] {
 .login {
     background-color: #fff;
     border: 1px solid #65b42c;
-    margin-top: 20px;
     padding-top: 30px;
+    padding-bottom: 30px;
     .input {
         border: 1px solid #c1c1c1;
         background-color: #fff;
@@ -229,10 +230,6 @@ input[type=checkbox] {
     margin-right: 0;
 }
 
-.pass-error i {
-    background-position: -40px -200px;
-}
-
 .pass-succ i,
 .pass-tip i,
 .pass-error i {
@@ -243,14 +240,19 @@ input[type=checkbox] {
     margin-right: 9px;
 }
 
+.pass-error i {
+    background-position: -40px -200px;
+    width: 5px;
+}
+
 .pass-succ i {
     background-position: 0 -200px;
+    width: 5px;
 }
 
 .msg-wrap {
     height: auto !important;
     margin: 2px 0px 5px;
-    min-height: 31px;
 }
 
 .msg-error {

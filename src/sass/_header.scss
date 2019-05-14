@@ -72,6 +72,7 @@ $city-con-color:#007f4d;
                     transform: rotate(180deg);
                 }
             }
+            //送达城市
             .city-sz {
                 float: left;
                 height: 16px;
@@ -79,6 +80,7 @@ $city-con-color:#007f4d;
                 margin: 7px 0;
                 cursor: pointer;
             }
+            //城市名字
             .city-name {
                 z-index: $z99+1;
                 position: relative;
@@ -114,6 +116,7 @@ $city-con-color:#007f4d;
                     color: $city-con-color;
                 }
             }
+            //城市列表头部
             .citylist-header {
                 padding: 0 15px;
                 line-height: 30px;
@@ -125,6 +128,7 @@ $city-con-color:#007f4d;
                     font-family: simsun;
                 }
             }
+            //热门城市
             .citylist-hot {
                 overflow: hidden;
                 margin: 10px 15px;
@@ -145,6 +149,7 @@ $city-con-color:#007f4d;
                     padding: 3px 10px 3px 15px;
                 }
             }
+            //城市tab
             .citylist-tab {
                 margin: 10px 0;
                 padding: 0 15px;
@@ -198,6 +203,7 @@ $city-con-color:#007f4d;
                 font-weight: bold;
             }
         }
+        //网警
         .police {
             img {
                 vertical-align: middle;
@@ -369,11 +375,12 @@ $city-con-color:#007f4d;
         }
     }
     .shopping-cart {
-        z-index: $z99;
+        z-index: 20;
         position: relative;
     }
 }
 
+//右边购物车按钮
 .shopping-btn {
     width: 170px;
     height: 28px;
@@ -453,7 +460,6 @@ $city-con-color:#007f4d;
     li {
         position: relative;
         overflow: hidden;
-        zoom: 1;
         background: #fff;
         height: 45px;
         padding: 0 0 15px 0;
@@ -516,8 +522,9 @@ $city-con-color:#007f4d;
     }
 }
 
-.header_fixed {
-    z-index: $z99 +1;
+//当滚轮,吸顶
+.header-fixed {
+    z-index: 100;
     display: block;
     position: fixed;
     top: 0px;

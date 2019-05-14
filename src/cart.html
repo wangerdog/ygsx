@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/register.css">
@@ -27,17 +27,16 @@
             </div>
         </div>
     </div>
-
     <!-- 购物车详情 -->
     <div id="cart">
         <div class="wrap">
-            <div class="cart-none none">
+            <div class="cart-none">
                 <p>
                     <b>购物车是空的，去买点东西吧！<a href="./index.html">继续逛逛&gt;&gt;</a></b>
                 </p>
             </div>
             <!-- 当购物车有物品 -->
-            <div class="cart-show">
+            <div class="cart-show none">
                 <!-- 导航标题 -->
                 <h2>
                     我的购物车
@@ -74,7 +73,7 @@
                     <div class="cart-main-list">
                         <table class="cart-table">
                             <tbody class="car-cont">
-                                <tr>
+                                <tr class="none car-cont-tr">
                                     <td class="cart-t-check"><input type="checkbox" checked="checked"></td>
                                     <td class="cart-t-img">
                                         <a href="#">
@@ -82,16 +81,16 @@
                                         </a>
                                     </td>
                                     <td class="cart-t-info">
-                                        <a href="http://www.yiguo.com/product/1310853.html">味千拉面麻辣骨汤拉面(2人份)320g
+                                        <a href="#">味千拉面麻辣骨汤拉面(2人份)320g
                                         </a>
                                     </td>
                                     <td class="cart-t-ub"></td>
-                                    <td class="cart-t-price">￥13.80</td>
+                                    <td class="cart-t-price">13.80</td>
                                     <td class="cart-t-num">
                                         <div class="quantity-form">
                                             <a href="#" class="decrement"></a>
                                             <input id="" type="text" class="itxt" oldnum="1" value="1" onblur="">
-                                            <a href="" class="increment"></a>
+                                            <a href="#" class="increment"></a>
                                         </div>
                                     </td>
                                     <td class="cart-t-total">￥<span>13.80</span></td>
@@ -99,7 +98,7 @@
                                     <td class="cart-t-opera">
                                         <a href="#">移入收藏</a>
                                         <br>
-                                        <a href="#">删除</a>
+                                        <a href="#" class="delgood">删除</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -108,7 +107,7 @@
                     <div class="cart-main-bot">
                         <div class="wrap clear">
                             <div class="fl">
-                                <label><input type="checkbox" checked="checked" class="chkAll">全选</label>
+                                <label><input type="checkbox" checked="checked" class="checkAll">全选</label>
                                 <a href="#"><i></i>删除选中的商品</a>
                                 <a href="#">清空购物车</a>
                             </div>
@@ -116,9 +115,7 @@
                                 <span class="ub">悠币：<em>0</em>个</span>
                                 <span class="fs14">总价：<em>￥<span id="zj">13.80</span></em>
                                 </span>
-
                                 <a href="#" class="btn" id="btnSubmit" name="btnSubmit">去结算</a>
-
                             </div>
                         </div>
                     </div>
@@ -126,6 +123,10 @@
             </div>
         </div>
     </div>
+    <div id="cart_footer"></div>
 </body>
+<script src="./script/thirdplugins/jquery.min.js"></script>
+<script src="./script/thirdplugins/jquery.cookie.js"></script>
+<script src="./script/js/cart.js"></script>
 
 </html>
